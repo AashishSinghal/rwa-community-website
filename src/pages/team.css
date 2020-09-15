@@ -1,0 +1,6 @@
+.team__container {
+  display: grid;
+  place-items: center;
+  grid-template-columns: auto auto auto;
+  margin-top: 1.45rem;
+}

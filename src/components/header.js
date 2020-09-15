@@ -4,14 +4,17 @@ import React from "react"
 
 const Header = ({ siteTitle }) => (
   <header
+    className="header"
     style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
+      display: "flex",
+      background: `#161616`,
+      alignItems: "center",
+      marginBottom: '1.45rem'
     }}
   >
     <div
       style={{
-        margin: `0 auto`,
+        margin: `0 auto 0 3rem`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
       }}
@@ -27,6 +30,28 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+    </div>
+
+    <div
+      className="nav-item"
+      style={{
+        margin: `0 3rem 0 auto`,
+        maxWidth: 960,
+        padding: `1.45rem 1.0875rem`,
+        alignItems: 'center'
+      }}
+    >
+      <h3 style={{ margin: 0 }}>
+        <Link
+          to="/team"
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+          }}
+        >
+          Team
+        </Link>
+      </h3>
     </div>
   </header>
 )
